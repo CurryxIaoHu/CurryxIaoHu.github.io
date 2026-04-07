@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhihao Xu - Renmin University of China</title>
+    <style>
+        /* ── Reset & Base ── */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+            padding: 40px 20px 60px;
+        }
+
+        /* ── Layout ── */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* ── Links ── */
+        a {
+            color: #1a0dab;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* ── Header ── */
+        .header {
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .header img {
+            float: right;
+            width: 200px;
+            margin: 0 0 15px 25px;
+            border-radius: 4px;
+        }
+        .header h1 {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 6px;
+            color: #222;
+        }
+        .header .subtitle {
+            font-size: 17px;
+            color: #555;
+            margin-bottom: 8px;
+        }
+        .header .affiliation {
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+        .header .contact {
+            font-size: 15px;
+            margin-bottom: 4px;
+        }
+        .header .links {
+            font-size: 15px;
+            margin-top: 8px;
+        }
+        .header .links a {
+            margin-right: 12px;
+        }
+
+        /* ── Section headings ── */
+        h2 {
+            font-size: 22px;
+            color: #222;
+            padding-bottom: 6px;
+            border-bottom: 1px solid #ccc;
+            margin-top: 32px;
+            margin-bottom: 14px;
+        }
+
+        /* ── Body text ── */
+        p {
+            margin-bottom: 12px;
+        }
+
+        /* ── Education list ── */
+        .edu-item {
+            margin-bottom: 10px;
+        }
+        .edu-item .period {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* ── Publications ── */
+        .pub-year {
+            font-size: 17px;
+            font-weight: bold;
+            margin-top: 18px;
+            margin-bottom: 8px;
+        }
+        .pub-item {
+            margin-bottom: 14px;
+            padding-left: 16px;
+            line-height: 1.55;
+        }
+        .pub-title {
+            font-weight: bold;
+        }
+        .pub-authors {
+            font-size: 15px;
+        }
+        .pub-venue {
+            font-style: italic;
+            font-size: 15px;
+        }
+        .pub-links {
+            font-size: 14px;
+        }
+        .pub-links a {
+            margin-right: 6px;
+        }
+
+        /* ── Experience ── */
+        .exp-item {
+            margin-bottom: 10px;
+        }
+
+        /* ── Footer ── */
+        .footer {
+            text-align: center;
+            font-size: 13px;
+            color: #999;
+            margin-top: 50px;
+            padding-top: 16px;
+            border-top: 1px solid #eee;
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 600px) {
+            .header img {
+                float: none;
+                display: block;
+                width: 150px;
+                margin: 0 auto 15px;
+            }
+            .header { text-align: center; }
+            h1 { font-size: 24px; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <!-- ====== Header ====== -->
+    <div class="header">
+        <img src="files/photo.svg" alt="Photo of Zhihao Xu">
+        <h1>Zhihao Xu (许志浩)</h1>
+        <div class="subtitle">Master's Student</div>
+        <div class="affiliation">
+            <a href="http://ai.ruc.edu.cn/">Gaoling School of Artificial Intelligence</a>,
+            <a href="https://www.ruc.edu.cn/">Renmin University of China</a>
+        </div>
+        <div class="contact">
+            Email: [your-email]@ruc.edu.cn
+        </div>
+        <div class="links">
+            <a href="#">[Google Scholar]</a>
+            <a href="#">[GitHub]</a>
+        </div>
+    </div>
+
+    <!-- ====== About Me ====== -->
+    <h2>About Me</h2>
+    <p>
+        I am a master's student (2025–2027) at the
+        <a href="http://ai.ruc.edu.cn/">Gaoling School of Artificial Intelligence</a>,
+        <a href="https://www.ruc.edu.cn/">Renmin University of China</a>.
+        My research interests include <strong>LLM Safety</strong>,
+        <strong>Value Alignment</strong>, and <strong>Interpretability</strong>.
+    </p>
+
+    <!-- ====== Education ====== -->
+    <h2>Education</h2>
+    <div class="edu-item">
+        <strong>M.S.</strong> in Artificial Intelligence, Renmin University of China
+        <br>
+        <span class="period">2025 – 2027</span> · Gaoling School of Artificial Intelligence
+        <br>
+        Advisor: [TBD]
+    </div>
+    <div class="edu-item">
+        <strong>B.S.</strong> [TBD]
+        <br>
+        <span class="period">[Year – Year]</span> · [University / School]
+    </div>
+
+    <!-- ====== Publications ====== -->
+    <h2>Publications</h2>
+
+    <div class="pub-year">2025</div>
+    <div class="pub-item">
+        <span class="pub-title">Internal Value Alignment in Large Language Models through Controlled Value Vector Activation</span>
+        <br>
+        <span class="pub-authors">
+            Haoran Jin, Meng Li, Xiting Wang, <strong>Zhihao Xu</strong>, Minlie Huang, Yantao Jia, Defu Lian
+        </span>
+        <br>
+        <span class="pub-venue">ACL 2025</span>
+        &nbsp;
+        <span class="pub-links">
+            [<a href="https://aclanthology.org/2025.acl-long.1326/">Paper</a>]
+        </span>
+    </div>
+
+    <div class="pub-year">2024</div>
+    <div class="pub-item">
+        <span class="pub-title">Uncovering Safety Risks of Large Language Models through Concept Activation Vector</span>
+        <br>
+        <span class="pub-authors">
+            <strong>Zhihao Xu</strong>, Ruixuan Huang, Changyu Chen, Xiting Wang
+        </span>
+        <br>
+        <span class="pub-venue">NeurIPS 2024</span>
+        &nbsp;
+        <span class="pub-links">
+            [<a href="http://papers.nips.cc/paper_files/paper/2024/hash/d3a230d716e65afab578a8eb31a8d25f-Abstract-Conference.html">Paper</a>]
+        </span>
+    </div>
+
+    <div class="pub-item">
+        <span class="pub-title">Evaluating Readability and Faithfulness of Concept-based Explanations</span>
+        <br>
+        <span class="pub-authors">
+            Meng Li, Haoran Jin, Ruixuan Huang, <strong>Zhihao Xu</strong>, Defu Lian, Zijia Lin, Di Zhang, Xiting Wang
+        </span>
+        <br>
+        <span class="pub-venue">EMNLP 2024</span>
+        &nbsp;
+        <span class="pub-links">
+            [<a href="https://doi.org/10.18653/v1/2024.emnlp-main.36">Paper</a>]
+        </span>
+    </div>
+
+    <!-- ====== Experience ====== -->
+    <h2>Experience</h2>
+    <div class="exp-item">
+        <em>To be updated.</em>
+    </div>
+
+    <!-- ====== Footer ====== -->
+    <div class="footer">
+        &copy; 2025 Zhihao Xu. Last updated: April 2026.
+    </div>
+
+</div>
+</body>
+</html>
